@@ -54,6 +54,8 @@ void bfs(int src, struct graph* graph)
             }
             current = current->next;
         }
+
+        colors[u] = BLACK;
     }
 }
 
