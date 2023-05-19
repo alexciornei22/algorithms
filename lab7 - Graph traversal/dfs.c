@@ -55,7 +55,22 @@ void dfs(struct graph* graph)
         d[i] = 0;
         f[i] = 0;
     }
+#define NR_VERTICES 10
 
+#define A 0
+#define B 1
+#define C 2
+#define D 3
+#define E 4
+#define F 5
+#define G 6
+#define H 7
+#define I 8
+#define J 9
+
+#define WHITE 0
+#define GRAY 1
+#define BLACK 2
     int time = 0;
 
     for (int i = 0; i < graph->V; i++) {
