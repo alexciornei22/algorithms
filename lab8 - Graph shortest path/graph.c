@@ -15,6 +15,7 @@ struct graph* create_graph(int V)
 {
     struct graph* graph = malloc(sizeof(struct graph));
     graph->V = V;
+    graph->E = 0;
     graph->adj_list = calloc(V, sizeof(struct adj_list));
 
     for (int i = 0; i < V; i++)
@@ -38,4 +39,6 @@ void addEdge(struct graph* graph, int src, int dest, int weight)
 
         current->next = new_node;
     }
+
+    graph->E++;
 }

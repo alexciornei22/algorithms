@@ -10,10 +10,12 @@ struct adj_list {
 
 struct graph {
     int V;
+    int E;
     struct adj_list* adj_list;
 };
 
 struct adj_list_node* create_node(int v, int weight);
+
 struct graph* create_graph(int V);
 
 void addEdge(struct graph* graph, int src, int dest, int weight);
